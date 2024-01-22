@@ -5,15 +5,31 @@
     list-style: none;
 }
 body{
-    background-color: whitesmoke;
+    background-color: white;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow-y: hidden; /* Hide vertical scrollbar */
 }
 .Navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    
+    /* width: 5px; */
+    /* height: 50x; */
+    background-image: url(wesley.jpg);
+}
+.Navbar a{
+    /*  */
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  
+}
+
+.NavbarRight{
+    /* Take Home,Help,Countries and About Covid 19 and make it start from the right or flow form the right side */
+    float : right;
 }
 li {
     float: left;
@@ -25,7 +41,25 @@ li {
     padding: 16px;
     text-decoration: none;
 }
-.mainpic{
-    width: 1250px;
-    height: 800px;
+.container {
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.text-container {
+    width: 40%; /* Adjust the width of the text container */
+}
+
+.img {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+}
+
+.mainpic {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    margin: auto;
 }
